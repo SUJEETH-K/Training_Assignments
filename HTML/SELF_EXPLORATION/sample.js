@@ -11,41 +11,40 @@
 // }
 // let Employee1 = new Employee();
 // Employee1.display();
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    };
-    return function (d, b) {
-        if (typeof b !== "function" && b !== null)
-            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
 //var sam = ["ana", 3, "one", 3.23, true];
-var Employee = /** @class */ (function () {
-    function Employee(empId, empName) {
-        this.empId = empId;
-        this.empName = empName;
+// class Employee{
+//     empId: number;
+//     empName: string;
+//     constructor(empId: number, empName: string){
+//         this.empId = empId;
+//         this.empName = empName;
+//     }
+//     show() {
+//         console.log(this.empId + " " + this.empName);
+//     }
+// }
+// class Manager extends Employee{
+//     constructor(empid: number, empname: string){
+//         super(empid, empname);
+//     }
+// }
+// let man1 = new Manager(2, "kavin");
+// man1.show();
+//Spread operator
+// let arr1 = [ 16,1,14,34];
+// let arr2 = [ 42, 53, 66,89];
+// let copy_arr = [...arr1];
+// let new_arr = [...arr1, 72, 83,78];
+// let merged_arr = [...arr1, ...arr2];
+// console.log(new_arr);
+function sum() {
+    var numbers = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+        numbers[_i] = arguments[_i];
     }
-    Employee.prototype.show = function () {
-        console.log(this.empId + " " + this.empName);
-    };
-    return Employee;
-}());
-var Manager = /** @class */ (function (_super) {
-    __extends(Manager, _super);
-    function Manager(empid, empname) {
-        return _super.call(this, empid, empname) || this;
-    }
-    return Manager;
-}(Employee));
-var man1 = new Manager(2, "kavin");
-man1.show();
+    return numbers.reduce(function (acc, curr) { return acc + curr; }, 0);
+}
+console.log(sum(1, 2, 3, 4));
 // let set = new Set();
 // set.add("2");
 // set.add(true);
@@ -56,3 +55,11 @@ man1.show();
 // map1.set("in", "indonesia");
 //map1.get();
 // console.log(map1.keys());
+// let sam=function(){
+//     console.log("hello");
+// }
+// let sam1 = () => {
+//     console.log("hello");
+// }
+// let n: string = "kavin";
+// console.log(typeof(n));

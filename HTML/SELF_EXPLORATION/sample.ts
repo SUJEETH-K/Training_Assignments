@@ -15,27 +15,37 @@
 //var sam = ["ana", 3, "one", 3.23, true];
 
 
-class Employee{
-    empId: number;
-    empName: string;
-    constructor(empId: number, empName: string){
-        this.empId = empId;
-        this.empName = empName;
-    }
-    show() {
-        console.log(this.empId + " " + this.empName);
-    }
-}
+// class Employee{
+//     empId: number;
+//     empName: string;
+//     constructor(empId: number, empName: string){
+//         this.empId = empId;
+//         this.empName = empName;
+//     }
+//     show() {
+//         console.log(this.empId + " " + this.empName);
+//     }
+// }
 
-class Manager extends Employee{  
-    constructor(empid: number, empname: string){
-        super(empid, empname);
-    }
-}
+// class Manager extends Employee{
+//     constructor(empid: number, empname: string){
+//         super(empid, empname);
+//     }
+// }
 
- let man1 = new Manager(2, "kavin");
-man1.show();
+// let man1 = new Manager(2, "kavin");
+// man1.show();
  
+
+//Spread operator
+// let arr1 = [ 16,1,14,34];
+// let arr2 = [ 42, 53, 66,89];
+// let copy_arr = [...arr1];
+// let new_arr = [...arr1, 72, 83,78];
+// let merged_arr = [...arr1, ...arr2];
+
+// console.log(new_arr);
+
 
 // let set = new Set();
 // set.add("2");
@@ -50,3 +60,14 @@ man1.show();
 //map1.get();
 
 // console.log(map1.keys());
+
+// let sam=function(){
+//     console.log("hello");
+// }
+
+// let sam1 = () => {
+//     console.log("hello");
+// }
+
+// let n: string = "kavin";
+// console.log(typeof(n));
