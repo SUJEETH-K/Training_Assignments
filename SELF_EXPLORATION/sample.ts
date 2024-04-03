@@ -44,7 +44,7 @@
 // let new_arr = [...arr1, 72, 83,78];
 // let merged_arr = [...arr1, ...arr2];
 
-// console.log(new_arr);
+// console.log(new_arr); 
 
 
 // let set = new Set();
